@@ -10,7 +10,7 @@ We highly recommend that you setup a separate [AWS Organization](https://docs.aw
 
 ### Setting up a new AWS Organization
 
-This assumes that you have access to the AWS root account. If not, ask your organization admin to perform the following steps instead:
+This assumes that you have access to your main AWS root account. If not, ask your organization admin to perform the following steps instead:
 
 #### Enable multi-session support
 
@@ -28,3 +28,13 @@ To enable multi-session support in your AWS account:
 This feature allows you to have multiple browser sessions open simultaneously, which is useful when working with different AWS accounts or regions.
 
  
+#### Convert your root account to a management account
+
+Go the AWS Organization page in your AWS console and click Create Organization. If this is the first organization that's being created, you will see the following prompt. Click *Create an organization* button. If you already have AWS Organization enabled, you can skip to the next step.
+
+<a href="/becoming-management-account.png" target="_blank">
+<img src="/becoming-management-account.png" alt="Convert to a management account" style="cursor: pointer;" />
+</a>
+
+#### Setup a new AWS Organization
+
