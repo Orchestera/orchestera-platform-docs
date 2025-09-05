@@ -36,10 +36,26 @@ Go the AWS Organization page in your AWS console and click Create Organization. 
 <img src="/becoming-management-account.png" alt="Convert to a management account" style="cursor: pointer;" />
 </a>
 
+
+Now, on your AWS Organizations page, you will see something like the following. Take a note of the management account id that would be needed later.
+
+<a href="/aws-root-org-page.png" target="_blank">
+<img src="/aws-root-org-page.png" alt="Convert to a management account" style="cursor: pointer;" />
+</a>
+
 #### Setup a new AWS Organization
 
-You can either create a new AWS account or invite an existing AWS account to your Organization. For the purpose of this tutorial, we will create a new AWS account called `Orchestera Sandbox` as part of this Organization, setup a root user credential on that account and then use that to add it to our current session.
+You can either create a new AWS account or invite an existing AWS account to your Organization. For the purpose of this tutorial, we will create a new AWS account called `Orchestera Sparklith` and this is the recommended flow. Make sure to provide an unused email to associate with your new account and also make sure that the IAM role name is set to `OrganizationAccountAccessRole`. Finally Create the AWS account.
 
 <a href="/add-aws-account.png" target="_blank">
 <img src="/add-aws-account.png" alt="Add a new AWS account" style="cursor: pointer;" />
 </a>
+
+Once your account is created, also note the account id of this new account under AWS Organizations > AWS accounts page.
+
+
+##### Setup IAM users and groups
+
+While you are still logged-in as root in your management account, go to IAM > User groups and create a new group called `orchestera-admin-group`.
+
+
