@@ -38,3 +38,8 @@ Go the AWS Organization page in your AWS console and click Create Organization. 
 
 #### Setup a new AWS Organization
 
+You can either create a new AWS account or invite an existing AWS account to your Organization. For the purpose of this tutorial, we will create a new AWS account called `Orchestera Sandbox` as part of this Organization, setup a root user credential on that account and then use that to add it to our current session.
+
+<a href="/add-aws-account.png" target="_blank">
+<img src="/add-aws-account.png" alt="Add a new AWS account" style="cursor: pointer;" />
+</a>
