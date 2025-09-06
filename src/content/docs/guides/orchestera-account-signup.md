@@ -4,7 +4,7 @@ description: Guide on how to setup a new Orchestera Platform account
 ---
 To use Orchestera Platform, you would first need to create an account.
 
-### Account Sign Up
+## Account Sign Up
 You can sign up for a free account by clicking the "Log In" button in the top right corner of the screen.
 
 Currently, the only supported sign up method is GitHub, but more will be supported in future.

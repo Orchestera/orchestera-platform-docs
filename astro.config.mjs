@@ -13,7 +13,7 @@ export default defineConfig({
 					label: 'Setting Up Your Account',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Account Sign Up', slug: 'guides/account-signup' },
+						{ label: 'Orchestera Account Sign Up', slug: 'guides/orchestera-account-signup' },
 						{ label: 'AWS Account Setup', slug: 'guides/aws-account-setup' },
 					],
 				},
