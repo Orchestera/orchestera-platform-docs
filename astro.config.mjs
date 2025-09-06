@@ -24,4 +24,5 @@ export default defineConfig({
 			],
 		}),
 	],
+	site: 'https://orchestera.github.io',
 });
