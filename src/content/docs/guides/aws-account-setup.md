@@ -181,10 +181,14 @@ You should be logged into the member account (Orchestera Sparklith) to create th
                 "iam:DeleteInstanceProfile",
                 "iam:GetInstanceProfile",
                 "iam:ListInstanceProfiles",
+                "iam:ListRolePolicies",
+                "iam:TagRole",
+                "iam:CreateServiceLinkedRole",
                 "cloudformation:*",
                 "sqs:*",
                 "pricing:GetProducts",
-                "ssm:GetParameter"
+                "ssm:GetParameter",
+                "ssm:GetParametersByPath"
             ],
             "Resource": "*"
         }
