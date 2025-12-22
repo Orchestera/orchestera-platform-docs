@@ -18,6 +18,7 @@ export default defineConfig({
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Orchestera Account Sign Up', slug: 'guides/orchestera-account-signup' },
 						{ label: 'AWS Account Setup', slug: 'guides/aws-account-setup' },
+						{ label: 'Creating your first Spark Cluster', slug: 'guides/creating-your-first-stack' },
 					],
 				},
 				{
