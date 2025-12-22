@@ -151,7 +151,7 @@ We established all the pre-requisites in the previous section to setup a separat
 
 ### Create `OrchesteraAccessPolicy` in your member account
 
-You should be logged into the member account (Orchestera Sparklith) to create this policy since Orchestera Platform only needs access to your member account.
+**You should be logged into the member account (Orchestera Sparklith) to create this policy since Orchestera Platform only needs access to your member account.**
 
 1. In your member account AWS console, go to the IAM > Policies and click on **Create policy**
 
@@ -183,16 +183,18 @@ You should be logged into the member account (Orchestera Sparklith) to create th
 
 ### Create `OrchesteraAccessRole` in your member account
 
-You should be logged into the member account (Orchestera Sparklith) to create this role.
+**You should be logged into the member account (Orchestera Sparklith) to create this role.**
 
 1. Go to the IAM > Roles and click on **Create role**
 
 2. In the **Select trusted entity** section, select **AWS account**
 
-3. Select **Another AWS account** and enter the id `017059471480`. This is the id of the Orchestera Platform that will orchesterate Spark clusters in your account. You are essentially giveing Orchestera Platform to orchesterate resources in your member account.
+3. Select **Another AWS account** and enter the id `017059471480`. This is the id of the Orchestera Platform that will orchesterate Spark clusters in your account. You are essentially giving Orchestera Platform to orchesterate resources in your member account.
 
-4. Click Next and on the permissions page, select `OrchesteraAccessPolicy`.
+4. Check the option "Require external ID" and enter a unique string into the box. *Keep note of this unique string as this will be needed later.* Leave the "Require MFA" checkbox unchecked.
 
-5. Set `OrchesteraAccessRole` as the role name and click **Create role**
+5. Click Next and on the permissions page, select `OrchesteraAccessPolicy`.
+
+6. Set `OrchesteraAccessRole` as the role name and click **Create role**
 
 You have now successfully setup your AWS account with the right roles and permissions to allow Orchestera Platform to orchesterate Spark clusters for you. In the subsequent sections, you will be able to verify this setup as well.
