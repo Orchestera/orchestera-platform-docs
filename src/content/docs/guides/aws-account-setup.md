@@ -153,7 +153,7 @@ We established all the pre-requisites in the previous section to setup a separat
 
 You should be logged into the member account (Orchestera Sparklith) to create this policy since Orchestera Platform only needs access to your member account.
 
-1. Go to the IAM > Policies and click on **Create policy**
+1. In your member account AWS console, go to the IAM > Policies and click on **Create policy**
 
 2. Click on the JSON policy editor and replace all the content with the following JSON.
 
@@ -166,48 +166,11 @@ You should be logged into the member account (Orchestera Sparklith) to create th
             "Action": [
                 "ec2:*",
                 "eks:*",
-                "iam:CreateRole",
-                "iam:AttachRolePolicy",
-                "iam:PutRolePolicy",
-                "iam:DeleteRolePolicy",
-                "iam:DeleteRole",
-                "iam:GetRole",
-                "iam:ListInstanceProfilesForRole",
-                "iam:ListAttachedRolePolicies",
-                "iam:PassRole",
-                "iam:CreateInstanceProfile",
-                "iam:AddRoleToInstanceProfile",
-                "iam:RemoveRoleFromInstanceProfile",
-                "iam:DeleteInstanceProfile",
-                "iam:GetInstanceProfile",
-                "iam:ListInstanceProfiles",
-                "iam:ListRolePolicies",
-                "iam:TagRole",
-                "iam:CreateServiceLinkedRole",
-                "iam:CreateOpenIDConnectProvider",
-                "iam:TagOpenIDConnectProvider",
-                "iam:GetOpenIDConnectProvider",
-                "iam:CreatePolicy",
-                "iam:TagPolicy",
-                "iam:GetPolicy",
+                "iam:*",
                 "cloudformation:*",
                 "sqs:*",
-                "pricing:GetProducts",
-                "ssm:GetParameter",
-                "ssm:GetParametersByPath",
-                "iam:GetPolicyVersion",
-                "iam:TagInstanceProfile",
-                "iam:CreateInstanceProfile",
-                "iam:GetInstanceProfile",
-                "iam:DeleteInstanceProfile",
-                "iam:AddRoleToInstanceProfile",
-                "iam:RemoveRoleFromInstanceProfile",
-                "iam:CreatePolicy",
-                "iam:GetPolicy",
-                "iam:DeletePolicy",
-                "iam:ListPolicyVersions",
-                "iam:TagPolicy",
-                "iam:UntagPolicy"
+                "pricing:*",
+                "ssm:*"
             ],
             "Resource": "*"
         }
