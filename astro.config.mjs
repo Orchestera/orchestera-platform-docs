@@ -19,6 +19,7 @@ export default defineConfig({
 						{ label: 'Orchestera Account Sign Up', slug: 'guides/orchestera-account-signup' },
 						{ label: 'AWS Account Setup', slug: 'guides/aws-account-setup' },
 						{ label: 'Creating your first Spark Cluster', slug: 'guides/creating-your-first-stack' },
+						{ label: 'Giving workspace users access to the Spark K8s Cluster', slug: 'guides/user-access-to-spark-cluster' },
 					],
 				},
 				{
