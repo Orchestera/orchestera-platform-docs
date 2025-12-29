@@ -120,10 +120,9 @@ Assuming that you have followed all the steps from the previous section, your IA
 1. Log out from the root account
 
 2. Go to AWS Console login page
-
--- Enter Account ID of the management account
--- Enter your IAM user name
--- Enter your password and **Sign in**
+    - Enter Account ID of the management account
+    - Enter your IAM user name
+    - Enter your password and **Sign in**
 
 3. Turn on multi-session support if it's not already turned on
 
