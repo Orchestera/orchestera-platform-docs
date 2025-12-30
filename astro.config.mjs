@@ -20,6 +20,8 @@ export default defineConfig({
 						{ label: 'AWS Account Setup', slug: 'guides/aws-account-setup' },
 						{ label: 'Creating your first Spark Cluster', slug: 'guides/creating-your-first-stack' },
 						{ label: 'Giving workspace users access to the Spark K8s Cluster', slug: 'guides/user-access-to-spark-cluster' },
+						{ label: 'Giving your Spark jobs access to S3 and other AWS resources', slug: 'guides/giving-access-to-s3' },
+						{ label: 'Injecting secrets into your Spark jobs', slug: 'guides/injecting-secrets-into-your-spark-jobs' },
 					],
 				},
 				{
