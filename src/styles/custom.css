@@ -1,0 +1,9 @@
+/* Widen the main content area */
+:root {
+  --sl-content-width: 80rem; /* Default is 40rem, increase as needed */
+}
+
+/* Alternative: Make it even wider or use max-width */
+/* .sl-markdown-content {
+  max-width: 60rem;
+} */

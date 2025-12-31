@@ -7,6 +7,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Orchestera Platform',
+			customCss: ['./src/styles/custom.css'],
 			expressiveCode: {
 				themes: ['github-dark'],
 			},
