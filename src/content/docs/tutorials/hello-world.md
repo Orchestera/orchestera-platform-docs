@@ -32,9 +32,6 @@ source .venv/bin/activate
 Update the `src/example/spark/application.py` with the following, replacing `<your-bucket-name>` with your actual S3 bucket.
 
 ```python
-"""
-Module for a sample PySpark application with the driver running in client mode.
-"""
 import os
 import logging
 

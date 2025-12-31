@@ -30,6 +30,7 @@ export default defineConfig({
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Developing Spark applications using Jupyter Notebooks', slug: 'tutorials/jupyter-notebooks' },
 						{ label: 'Writing your first hello-world Spark pipeline', slug: 'tutorials/hello-world' },
+						{ label: 'Using Iceberg tables with Spark', slug: 'tutorials/iceberg-hello-world' },
 					],
 				},
 				{
