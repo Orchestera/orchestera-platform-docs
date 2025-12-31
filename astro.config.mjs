@@ -28,7 +28,8 @@ export default defineConfig({
 					label: 'Tutorials',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Running hello-world Spark job', slug: 'guides/hello-world' },
+						{ label: 'Developing Spark applications using Jupyter Notebooks', slug: 'tutorials/jupyter-notebooks' },
+						{ label: 'Writing your first hello-world Spark pipeline', slug: 'tutorials/hello-world' },
 					],
 				},
 				{
