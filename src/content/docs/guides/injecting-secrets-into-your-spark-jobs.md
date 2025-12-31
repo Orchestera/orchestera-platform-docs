@@ -16,19 +16,16 @@ The following is an example of how to do that.
 4. Select Tier as Standard
 5. Select Type as SecureString
 6. In KMS key source, select My current account and leave the KMS Key ID as is, i.e. `alias/aws/ssm`
-5. Paste the following in the Value area. Make sure that it's a valid JSON.
+5. Paste the following in the Value area. Make sure that it's a valid JSON and has a flat structure as shown here.
 ```json
 {
-    "name": "my-secret",
-    "data": {
-        "key1": "value1",
-        "key2": "value2",
-        "DATABASE_URL": "postgresql://..."
-    }
+    "key1": "value1",
+    "key2": "value2",
+    "DATABASE_URL": "postgresql://..."
 }
 ```
 
-Create it and the force update the cluster from the Orchestera platform UI.
+Create it and then force update the cluster from the Orchestera platform UI.
 
 Note that you will need to re-launch your pods for them to have access to these as env.
 
