@@ -1,5 +1,5 @@
 ---
-title: Writing your first hello-world Spark pipeline
+title: Using Iceberg tables with Spark
 description: Writing your first hello-world Spark pipeline using Orchestera Platform
 ---
 
