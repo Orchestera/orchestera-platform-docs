@@ -172,6 +172,26 @@ We established all the pre-requisites in the previous section to setup a separat
                 "ssm:*"
             ],
             "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:CreateBucket",
+                "s3:DeleteBucket",
+                "s3:PutBucketPublicAccessBlock",
+                "s3:PutEncryptionConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketPolicy",
+                "s3:ListBucket",
+                "s3:GetBucketLocation",
+                "s3:GetObject",
+                "s3:PutObject",
+                "s3:DeleteObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::orchestera-sh-*",
+                "arn:aws:s3:::orchestera-sh-*/*"
+            ]
         }
     ]
 }
