@@ -12,7 +12,7 @@ The following is an example of how to do that.
 ## Injecting secrets via AWS Parameter Store
 1. In your AWS Console, search for Parameter Store
 2. Click on "Create parameter"
-3. Specify the name exactly as follows: `/orchestera/sparklith/<namespace>/secrets/default`. Replace `<namespace>` with the actual namespace for which you are giving pods access to.
+3. Specify the name exactly as follows: `/orchestera/sparklith/<cluster-name>/<namespace>/secrets/default`. Replace `<cluster-name>` with your EKS cluster name (e.g. `ws-2-u-2-feb-14-dev-local-eks`) and `<namespace>` with the actual namespace for which you are giving pods access to.
 4. Select Tier as Standard
 5. Select Type as SecureString
 6. In KMS key source, select My current account and leave the KMS Key ID as is, i.e. `alias/aws/ssm`

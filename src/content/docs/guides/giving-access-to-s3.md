@@ -14,7 +14,7 @@ The following highlights S3 bucket access as an example but the same principles 
 ## Setting up S3 access via AWS Parameter Store
 1. In your AWS Console, search for Parameter Store
 2. Click on "Create parameter"
-3. Specify the name exactly as follows: `/orchestera/sparklith/<namespace>/iams/s3`. Replace `<namespace>` with the actual namespace for which you are giving pods access to.
+3. Specify the name exactly as follows: `/orchestera/sparklith/<cluster-name>/<namespace>/iams/s3`. Replace `<cluster-name>` with your EKS cluster name (e.g. `ws-2-u-2-feb-14-dev-local-eks`) and `<namespace>` with the actual namespace for which you are giving pods access to.
 4. Select Type as String and Data type as text
 5. Paste the following in the Value area. Make sure that it's a valid JSON. You can use https://jsonlint.com/ for JSON validation
 ```json
